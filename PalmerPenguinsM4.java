@@ -46,7 +46,7 @@ public class PalmerPenguinsM4 {
         // TODO 3 print all accumulators
         System.out.println("Chinstrap count = " + specChinStrapCount);
         System.out.println("Gentoo count = " + specGentooCount);
-        System.out.prinln("Adelie count = " + spceAdelieCount);
+        System.out.println("Adelie count = " + specAdelieCount);
     }
 }
 
