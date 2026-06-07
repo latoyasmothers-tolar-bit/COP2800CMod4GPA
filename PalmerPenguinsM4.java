@@ -1,6 +1,6 @@
 // PalmerPenguinsM4.java
-// 
-// 
+// Latoya Smothers-Tolar
+// 06-07-2026
 // Reads the CSV file and parses the data
 
 import java.io.*;
@@ -16,7 +16,11 @@ public class PalmerPenguinsM4 {
     
     public static void main(String[] args) {
         // TODO 1 Declare the variables
-    
+        int currRow = 0;
+        int specChinStrapCount = 0;
+        int specGentooCount = 0;
+        int specAdelieCount = 0;
+        
         // Read the headers
         String line = CSVReader.readFile(FILE_NAME, currRow++);
         if (line == null) {
@@ -31,12 +35,18 @@ public class PalmerPenguinsM4 {
             if (line.contains(SP_CHINSTRAP)) {
                 specChinStrapCount++;
             // TODO 2 complete the branches to increment the accumulators    
-            } else if            
+            } else if  (line.contains(SP_GENTOO)) {
+                specGentooCount++;
+            } else if (line.contains(SP_ADELIE)) {
+                specAdelieCount++;
+            }
         }
     
         // Print the results
         // TODO 3 print all accumulators
-
+        System.out.println("Chinstrap count = " + specChinStrapCount);
+        System.out.println("Gentoo count = " + specGentooCount);
+        System.out.prinln("Adelie count = " + spceAdelieCount);
     }
 }
 
